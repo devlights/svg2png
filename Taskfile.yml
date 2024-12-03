@@ -1,0 +1,18 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  APP: svg2png
+
+tasks:
+  default:
+    cmds:
+      - task: build
+  build:
+    dir: cmd/svg2png
+    cmds:
+      - go build -o ./{{.APP}}{{exeExt}} main.go
+  install:
+    cmds:
+      - go install github.com/devlights/svg2png/cmd/svg2png@latest
