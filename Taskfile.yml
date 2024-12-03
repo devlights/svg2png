@@ -15,4 +15,4 @@ tasks:
       - go build -o ./{{.APP}}{{exeExt}} main.go
   install:
     cmds:
-      - go install github.com/devlights/svg2png/cmd/svg2png@latest
+      - go install github.com/devlights/svg2png/cmd/svg2png
