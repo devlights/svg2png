@@ -5,7 +5,7 @@
 ## インストール
 
 ```sh
-go install github.com/devlights/svg2png/cmd/svg2png@latest 
+go install github.com/devlights/svg2png/cmd/svg2png
 ```
 
 ライブラリとして利用する場合は
